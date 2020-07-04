@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,149 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Egg_Timers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rL3-Hu-iUO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7NF-Jq-80g">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Boil your egg !!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISo-dP-v01">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="163.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="backgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEi-6u-AkV">
+                                        <rect key="frame" x="0.0" y="204.5" width="414" height="204.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nwp-Qp-Yw8">
+                                                <rect key="frame" x="8" y="8" width="398" height="188.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7K-o4-KrJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="94.5"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="40"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODk-fl-TUJ">
+                                                        <rect key="frame" x="0.0" y="94.5" width="398" height="94"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="40"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="backgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Nwp-Qp-Yw8" secondAttribute="trailing" id="CQB-id-jLJ"/>
+                                            <constraint firstItem="Nwp-Qp-Yw8" firstAttribute="leading" secondItem="jEi-6u-AkV" secondAttribute="leadingMargin" id="Wit-8H-F5Y"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="Nwp-Qp-Yw8" secondAttribute="bottom" id="Wzr-Z5-Ty2"/>
+                                            <constraint firstItem="Nwp-Qp-Yw8" firstAttribute="top" secondItem="jEi-6u-AkV" secondAttribute="topMargin" id="lG8-6a-mpD"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Obf-3L-B70">
+                                        <rect key="frame" x="0.0" y="409" width="414" height="204.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Dw-zn-3fK">
+                                                <rect key="frame" x="10" y="0.0" width="394" height="204.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERZ-ve-HAK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="204.5"/>
+                                                        <state key="normal" title="Soft" backgroundImage="soft_egg">
+                                                            <color key="titleColor" red="0.14117647059999999" green="0.25973930950000002" blue="0.27748942380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eggButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pcc-gz-FeU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFP-r5-a6g">
+                                                        <rect key="frame" x="134.5" y="0.0" width="125" height="204.5"/>
+                                                        <state key="normal" title="Medium" backgroundImage="medium_egg">
+                                                            <color key="titleColor" red="0.14117647059999999" green="0.25973930950000002" blue="0.27748942380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleShadowColor" red="0.14117647059999999" green="0.25973930950000002" blue="0.27748942380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eggButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDE-CQ-9vW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWU-yx-w7n">
+                                                        <rect key="frame" x="269.5" y="0.0" width="124.5" height="204.5"/>
+                                                        <state key="normal" title="Hard" backgroundImage="hard_egg">
+                                                            <color key="titleColor" red="0.14117647059999999" green="0.25973930950000002" blue="0.27748942380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleShadowColor" red="0.14117647059999999" green="0.25973930950000002" blue="0.27748942380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eggButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2bL-ft-UNh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="backgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="2Dw-zn-3fK" firstAttribute="top" secondItem="Obf-3L-B70" secondAttribute="top" id="4vp-E5-pyZ"/>
+                                            <constraint firstItem="2Dw-zn-3fK" firstAttribute="leading" secondItem="Obf-3L-B70" secondAttribute="leading" constant="10" id="CQK-tm-9r9"/>
+                                            <constraint firstAttribute="bottom" secondItem="2Dw-zn-3fK" secondAttribute="bottom" id="bGJ-dq-dEK"/>
+                                            <constraint firstAttribute="trailing" secondItem="2Dw-zn-3fK" secondAttribute="trailing" constant="10" id="wlS-mx-vah"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SsT-El-1at">
+                                        <rect key="frame" x="0.0" y="613.5" width="414" height="204.5"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UlK-oe-ixg">
+                                                <rect key="frame" x="50" y="101.5" width="314" height="2"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="a4e-Q4-fnq"/>
+                                                    <constraint firstAttribute="width" constant="314" id="t5c-GN-H8Q"/>
+                                                </constraints>
+                                            </progressView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="backgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="UlK-oe-ixg" firstAttribute="centerY" secondItem="SsT-El-1at" secondAttribute="centerY" id="rie-7h-LZh"/>
+                                            <constraint firstItem="UlK-oe-ixg" firstAttribute="centerX" secondItem="SsT-El-1at" secondAttribute="centerX" id="xS8-5j-Xtg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rL3-Hu-iUO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Ty-YP-a8M"/>
+                            <constraint firstItem="rL3-Hu-iUO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YVZ-xk-jPe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rL3-Hu-iUO" secondAttribute="trailing" id="eO5-q1-l3L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rL3-Hu-iUO" secondAttribute="bottom" id="tEd-V2-AW5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="UlK-oe-ixg" id="B3p-IZ-6gm"/>
+                        <outlet property="showLabel" destination="Y7K-o4-KrJ" id="B5R-bz-lGu"/>
+                        <outlet property="showTimerLabel" destination="ODk-fl-TUJ" id="Vl3-O6-MLt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="119"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hard_egg" width="287.5" height="366"/>
+        <image name="medium_egg" width="288" height="363"/>
+        <image name="soft_egg" width="287" height="365"/>
+        <namedColor name="backgroundColor">
+            <color red="0.98039215686274506" green="0.94117647058823528" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
