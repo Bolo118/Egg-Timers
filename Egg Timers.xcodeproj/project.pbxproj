@@ -13,7 +13,6 @@
 		EC86807B24B013D5007B4856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC86807924B013D5007B4856 /* Main.storyboard */; };
 		EC86807D24B013DD007B4856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC86807C24B013DD007B4856 /* Assets.xcassets */; };
 		EC86808024B013DD007B4856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC86807E24B013DD007B4856 /* LaunchScreen.storyboard */; };
-		EC86808824B04156007B4856 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC86808724B04156007B4856 /* alarm_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		EC86807C24B013DD007B4856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC86807F24B013DD007B4856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC86808124B013DD007B4856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC86808724B04156007B4856 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm_sound.mp3; path = Assets.xcassets/alarm_sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +63,6 @@
 				EC86807C24B013DD007B4856 /* Assets.xcassets */,
 				EC86807E24B013DD007B4856 /* LaunchScreen.storyboard */,
 				EC86808124B013DD007B4856 /* Info.plist */,
-				EC86808724B04156007B4856 /* alarm_sound.mp3 */,
 			);
 			path = "Egg Timers";
 			sourceTree = "<group>";
@@ -130,7 +127,6 @@
 			files = (
 				EC86808024B013DD007B4856 /* LaunchScreen.storyboard in Resources */,
 				EC86807D24B013DD007B4856 /* Assets.xcassets in Resources */,
-				EC86808824B04156007B4856 /* alarm_sound.mp3 in Resources */,
 				EC86807B24B013D5007B4856 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

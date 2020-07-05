@@ -12,7 +12,6 @@ import AVFoundation
 class ViewController: UIViewController {
     
     var timer = Timer()
-    var player: AVAudioPlayer?
     var secondsPassed = 0
     var totalTime = 0
     var aTime = 0
@@ -36,12 +35,6 @@ class ViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateBar), userInfo: nil, repeats: true)
     }
     
-    //MARK: - Sound
-    func playSound() {
-        let url = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player?.play()
-    }
     
     //MARK: - Progress Bar
     @objc func updateBar() {
@@ -56,7 +49,6 @@ class ViewController: UIViewController {
         } else {
             timer.invalidate()
             self.showTimerLabel.text = "DONE"
-            self.playSound()
         }
     }
     
@@ -67,16 +59,5 @@ class ViewController: UIViewController {
         return String(format: "%02d:%02d", minutes, seconds)
     }
 
-//    func timerFlow(_ seconds: Int) {
-//        var convertedSecond = seconds
-//        timer.invalidate()
-//        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (updateBar) in
-//            if convertedSecond > 0 {
-//                self.showTimerLabel.text = self.timeFormatted(convertedSecond)
-//                convertedSecond -= 1
-//                self.updateBar(convertedSecond)
-//            }
-//        }
-//    }
 }
 
