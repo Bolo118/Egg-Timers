@@ -120,10 +120,23 @@
                                                     <constraint firstAttribute="width" constant="314" id="t5c-GN-H8Q"/>
                                                 </constraints>
                                             </progressView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyc-Xt-HHr">
+                                                <rect key="frame" x="120" y="133.5" width="174" height="41"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                                <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <action selector="cancelButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHU-8K-am7"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" name="backgroundColor"/>
+                                        <color key="tintColor" red="0.14117647059999999" green="0.25973930950000002" blue="0.27748942380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Kyc-Xt-HHr" secondAttribute="bottom" constant="30" id="7e3-pw-OR6"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kyc-Xt-HHr" secondAttribute="trailing" constant="120" id="X7T-64-pU9"/>
+                                            <constraint firstItem="Kyc-Xt-HHr" firstAttribute="leading" secondItem="SsT-El-1at" secondAttribute="leading" constant="120" id="ghc-P8-dBS"/>
                                             <constraint firstItem="UlK-oe-ixg" firstAttribute="centerY" secondItem="SsT-El-1at" secondAttribute="centerY" id="rie-7h-LZh"/>
+                                            <constraint firstItem="Kyc-Xt-HHr" firstAttribute="top" secondItem="UlK-oe-ixg" secondAttribute="bottom" constant="30" id="tqO-PQ-htl"/>
                                             <constraint firstItem="UlK-oe-ixg" firstAttribute="centerX" secondItem="SsT-El-1at" secondAttribute="centerX" id="xS8-5j-Xtg"/>
                                         </constraints>
                                     </view>

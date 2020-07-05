@@ -58,6 +58,14 @@ class ViewController: UIViewController {
         let minutes: Int = (totalSeconds / 60) % 60
         return String(format: "%02d:%02d", minutes, seconds)
     }
-
+    
+    
+    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+        timer.invalidate()
+        progressBar.progress = 0.0
+        showLabel.text = " "
+        showTimerLabel.text = " "
+    }
+    
 }
 
